@@ -1,0 +1,18 @@
+<div class="todo-container">
+    <div class="todo-header">
+      <h2>Todo List</h2>
+    </div>
+  
+    <div class="d-flex align-items-center justify-content-between">
+      <input type="text" class="form-control todo-input" [(ngModel)]="newTodo" placeholder="Add New Task" />
+      <button class="btn btn-primary todo-button" (click)="addTodo()">Add</button>
+    </div>
+  
+    <ul class="todo-list">
+      <li *ngFor="let todo of todos; let i = index" class="todo-item">
+        {{ todo.text | custom }}   <!--Apply the custom pipe-->
+        <button class="btn btn-danger remove-button" (click)="removeTodo(i)">Remove</button>
+      </li>
+    </ul>
+  </div>
+  

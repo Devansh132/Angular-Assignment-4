@@ -1,0 +1,13 @@
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-class {
+    color: black;
+    background-color: whitesmoke;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  

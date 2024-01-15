@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ass_2';
+  todos: { text: string; completed: boolean }[] = [
+    { text: 'Learn Angular', completed: false }, // Initialize list 
+  ];
 }
